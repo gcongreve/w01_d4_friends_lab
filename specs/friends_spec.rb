@@ -100,9 +100,17 @@ end
   # 5. For a given person, remove a specific name from their list of friends
   # (hint: Same as above, testing for the length of the array should be sufficient)
 
-
+def test_removal_of_friend
+  result = removal_of_friend(@person1, "Velma")
+  assert_equal(3, result)
+end
   # 6. Find the total of everyone's money
   # (hint: use the @people array, remember how we checked the total number of eggs yesterday?)
+
+def test_total_friends_money
+  result = total_friends_money(@people)
+  assert_equal( 143 , result)
+end
 
 
   # 7. For two given people, allow the first person to loan a given value of money to the other
